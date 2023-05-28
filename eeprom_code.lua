@@ -16,7 +16,7 @@ end
 local function updateWorms()
   gpu.fill(1, 1, width, height, " ") -- Очищаем экран
   for _, worm in ipairs(worms) do
-    gpu.set(worm.x, worm.y, "------") -- Отображаем червя
+    gpu.set(worm.x, worm.y, "@") -- Отображаем червя
     worm.x = worm.x + math.random(-1, 1) -- Случайное перемещение по оси X
     worm.y = worm.y + math.random(-1, 1) -- Случайное перемещение по оси Y
     -- Ограничиваем позицию червя в пределах экрана
