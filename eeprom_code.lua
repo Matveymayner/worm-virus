@@ -1,3 +1,5 @@
+local invoke = component.invoke
+
 local component = require("component")
 local gpu = component.gpu
 
